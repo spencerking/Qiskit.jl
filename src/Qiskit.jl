@@ -12,13 +12,7 @@ function init()
     end
 end
 
-function QuantumCircuit(x)
-    qiskit.QuantumCircuit(x)
-end
-
-function QuantumCircuit(x, y)
-    qiskit.QuantumCircuit(x, y)
-end
+include("Terra.jl")
 
 function execute(circuit, backend)
     qiskit.execute(circuit, backend)
@@ -28,29 +22,10 @@ function execute(circuit, backend, shots)
     qiskit.execute(circuit, backend, shots=1024)
 end
 
-# Aer
-function get_backend(b)
-    qiskit.Aer.get_backend(b)
-end
+include("Aer.jl")
 
-#module Aer
-#    function get_backend(b)
-#	qiskit.aer.get_backend(b)
-#    end
-#end
+include("Visualization.jl")
 
-# Visualization
-function plot_state_city(state)
-    qiskit.visualization.plot_state_city(state)
-end
-
-function plot_histogram(data)
-    qiskit.visualization.plot_histogram(data)
-end
-
-
-# Version
-version() = qiskit.__version__
-qiskit_version() = qiskit.__qiskit_version__
+include("Version.jl")
 
 end # module
