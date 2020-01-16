@@ -1,0 +1,4 @@
+name = "Qiskit"
+uuid = "b9719d41-2062-433c-a3e7-1e25e81db4f5"
+authors = ["spencerking <spencerking@users.noreply.github.com>"]
+version = "0.1.0"
