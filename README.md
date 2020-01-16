@@ -30,3 +30,7 @@ If you see version numbers for the Qiskit components, your installation is worki
 ## Roadmap
 
 This project is still in its infancy and doesn't have a concrete roadmap yet. The plan is to work through the [IQX Tutorials](https://github.com/Qiskit/qiskit-iqx-tutorials) and [Community Tutorials](https://github.com/Qiskit/qiskit-community-tutorials) and implement the required functionality along the way. This should provide a solid foundation to work with moving forward.
+
+## License
+
+All wrapper code is licensed under the BSD 3-Clause License. All tutorials and examples are licensed under the Apache License 2.0 and are heavily based on the work from IBM and the Qiskit contributors.
