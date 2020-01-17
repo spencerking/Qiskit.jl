@@ -22,6 +22,8 @@ function execute(circuit, backend, shots)
     qiskit.execute(circuit, backend, shots=1024)
 end
 
+include("BasicAer.jl")
+
 include("Aer.jl")
 
 include("Visualization.jl")
